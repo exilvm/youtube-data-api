@@ -629,8 +629,6 @@ class YouTubeDataAPI:
         :returns: incomplete video metadata of videos returned by search query.
         :rtype: list of dict
         """
-        if search_type not in ["video", "channel", "playlist"]:
-            raise Exception("The value you have entered for `type` is not valid!")
 
         parser=parser if parser else P.raw_json
         part = ','.join(part)
